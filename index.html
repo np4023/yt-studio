@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="./odometer.js"></script>
+    <link href="./odometer.css" rel="stylesheet" />
+    <link rel="stylesheet" id="themeStylesheet" href="./style.css">
+    <script src="https://code.highcharts.com/10.3.3/highcharts.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="sub-header">
+            <div id="updating-dot">
+                <span id="dot"></span>
+            </div>
+            <h4 class="live">Updating live</h4>
+        </div>
+        <div>
+            <div class="icon-container">
+                <svg viewBox="0 0 24 24" focusable="false" class="svg1">
+                    <g width="24" height="24" viewBox="0 0 24 24">
+                        <path
+                            d="M21.58 7.19C21.35 6.33 20.67 5.65 19.81 5.42C18.25 5 12 5 12 5C12 5 5.75 5 4.19 5.42C3.33 5.65 2.65 6.33 2.42 7.19C2 8.75 2 12 2 12C2 12 2 15.25 2.42 16.81C2.65 17.67 3.33 18.35 4.19 18.58C5.75 19 12 19 12 19C12 19 18.25 19 19.81 18.58C20.67 18.35 21.35 17.67 21.58 16.81C22 15.25 22 12 22 12C22 12 22 8.75 21.58 7.19ZM10 15V9L15.2 12L10 15Z"
+                            class="yt-icon"></path>
+                    </g>
+                </svg>
+            </div>
+        </div>
+        <div class="other2">
+            <div></div>
+            <div>
+                <div class="icon-container2">
+                    <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="svg2"
+                        onclick="toggleTheme()">
+                        <g>
+                            <path
+                                d="M13,14h-2v-2h2V14z M13,5h-2v6h2V5z M19,3H5v16.59l3.29-3.29L8.59,16H9h10V3 M20,2v15H9l-5,5V2H20L20,2z">
+                            </path>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+            <div>
+                <div class="icon-container2">
+                    <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="svg3"
+                        onclick="window.location.href = 'https://huntingstats378.github.io'">
+                        <g>
+                            <path
+                                d="M12.7,12l6.6,6.6l-0.7,0.7L12,12.7l-6.6,6.6l-0.7-0.7l6.6-6.6L4.6,5.4l0.7-0.7l6.6,6.6l6.6-6.6l0.7,0.7L12.7,12z">
+                            </path>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+    <img
+      src="https://yt3.ggpht.com/zZa5_LIZoT_2TqhiNdterb2GFv7oZEI7QcgAJeLeD7_4aHVJZ1VZXciJ_ouplogGy_x-T6VrYw=s176-c-k-c0x00ffffff-no-rj"
+      alt=""
+      id="avatar"
+    />
+    <p id="title" onclick="search()">HuntingStats378</p>
+    <div class="main-area">
+      <div class="count-area">
+        <div id="count">
+          <div id="odo1a" class="odometer">0</div>
+          <div id="odo2a" class="odometer">0</div>
+          <div id="odo3a" class="odometer">0</div>
+          <div id="comma1a">,</div>
+          <div id="odo4a" class="odometer">0</div>
+          <div id="odo5a" class="odometer">0</div>
+          <div id="odo6a" class="odometer">0</div>
+          <div id="comma2a">,</div>
+          <div id="odo7a" class="odometer">0</div>
+          <div id="odo8a" class="odometer">0</div>
+          <div id="odo9a" class="odometer">0</div>
+        </div>
+        <p class="label">Subscribers</p>
+      </div>
+      <div class="chart-area">
+        <div class="chart-text-area">
+          <p class="channel-growth-label">Channel growth</p>
+          <p class="last-growth-label">Last hour</p>
+        </div>
+        <div id="chart"></div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
